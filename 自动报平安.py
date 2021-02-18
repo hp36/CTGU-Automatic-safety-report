@@ -98,3 +98,4 @@ for username, password, key, proxy in users:
     # start_new_thread(report,(usr,pas,))
     sentOne(username, password, key,proxy)
     # print(log[-1][-1])
+    
