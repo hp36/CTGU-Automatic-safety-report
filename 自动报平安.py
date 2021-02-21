@@ -11,7 +11,7 @@ logUrl = "http://yiqing.ctgu.edu.cn/wx/index/loginSubmit.do"
 
 def sentMsg(msg, key):
     headers = {'Content-Type': 'application/json;charset=utf-8'}
-    api_url = "https://qmsg.zendee.cn/send/"+key+"?msg=" + msg
+    api_url = "hhttps://qmsg.zendee.cn/group/"+key+"?msg=" + msg
     return requests.post(api_url, headers=headers, timeout=None).content
 
 
