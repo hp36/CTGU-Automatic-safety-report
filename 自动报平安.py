@@ -11,7 +11,7 @@ logUrl = "http://yiqing.ctgu.edu.cn/wx/index/loginSubmit.do"
 
 def sentMsg(msg, key):
     headers = {'Content-Type': 'application/json;charset=utf-8'}
-    api_url = "hhttps://qmsg.zendee.cn/group/"+key+"?msg=" + msg
+    api_url = "https://qmsg.zendee.cn/send/"+key+"?msg=" + msg
     return requests.post(api_url, headers=headers, timeout=None).content
 
 
@@ -98,4 +98,3 @@ for username, password, key, proxy in users:
     # start_new_thread(report,(usr,pas,))
     sentOne(username, password, key,proxy)
     # print(log[-1][-1])
-    
